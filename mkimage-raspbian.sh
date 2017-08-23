@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 set -e
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 
 dir="raspbian"
 rootfsDir="raspbian"
-tarFile="raspbian.2015.05.05.tar.xz"
-( set -x; mkdir -p "$rootfsDir" )
+tarFile="raspbian.image.tar.xz"
+mkdir -p "$rootfsDir"
 
 (
 	set -x
-	debootstrap --no-check-gpg --arch=armhf --verbose --variant='minbase' --include='iproute,iputils-ping' jessie "$rootfsDir" http://archive.raspbian.org/raspbian/
+	/usr/sbin/debootstrap --no-check-gpg --arch=armhf --verbose --variant='minbase' --include='iproute,iputils-ping' stretch "$rootfsDir" http://archive.raspbian.org/raspbian/
 )
 
 # now for some Docker-specific tweaks

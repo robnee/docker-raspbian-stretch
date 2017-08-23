@@ -1,5 +1,6 @@
-#sdhibit/rpi-raspbian
 FROM scratch
-MAINTAINER Steve Hibit <sdhibit@gmail.com>
+MAINTAINER schachr <schachr@github.com>
 
-ADD raspbian.2015.05.05.tar.xz /
+ADD raspbian.image.tar.xz /
+
+ENV DEBIAN_FRONTEND noninteractive
