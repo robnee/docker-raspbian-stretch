@@ -8,9 +8,9 @@ Tested on an OrangePi+2E.
 Generating
 ----------
 
-This image is built on a OrangePi+2E running raspbian. A chroot is created using debootstrap and compressed so docker can add the root filesystem during the build process. The compression requires xz-utils (or something similar) to be installed on the build machine.  
+This image is built on a OrangePi+2E running armbian. A chroot is created using debootstrap and compressed so docker can add the root filesystem during the build process. The compression requires xz-utils (or something similar) to be installed on the build machine.  
 
-[mkimage-raspbian.sh](https://github.com/sdhibit/docker-rpi-raspbian/blob/master/mkimage-raspbian.sh) is used to build and configure the chroot. This script **heavily** borrows from docker's [mkimage.sh](https://github.com/docker/docker/blob/master/contrib/mkimage.sh) script.
+[mkimage-raspbian.sh](https://github.com/schachr/docker-raspbian-stretch/blob/master/mkimage-raspbian.sh) is used to build and configure the chroot. This script **heavily** borrows from docker's [mkimage.sh](https://github.com/docker/docker/blob/master/contrib/mkimage.sh) script.
 
 Building
 --------
