@@ -1,7 +1,7 @@
 raspbian-stretch
 ===================
 
-[Raspbian](http://www.raspbian.org/) image for docker on raspberry pi.
+[Raspbian](http://www.raspbian.org/) image for Docker on Raspberry Pi.
 Tested on an OrangePi+2E.
 
 
