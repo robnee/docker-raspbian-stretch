@@ -24,11 +24,11 @@ Get some tacos.
 
 ```bash
 $ docker build -t raspbianstretch .
+```
 
 ### Automatic Build details
 There is an `automatic build` dependency to the github repository https://github.com/schachr/docker-raspbian-stretch as well. The archive will receive updates on a regular basis to ensure that the image is up to date.
 All you need to do is to pull it, remove the container (`docker rm`) if neccessary and restart it (`docker create/run`).
-```
 
 Running
 -------
