@@ -2,7 +2,7 @@ raspbian-stretch
 ===================
 
 [Raspbian](http://www.raspbian.org/) image for Docker on Raspberry Pi.
-Built and Tested on an OrangePi+2E running armbian stretch.
+Built and Tested on an Raspberry Pi 2 running raspbian stretch.
 
 Purpose
 -------
